@@ -1,12 +1,13 @@
 {
   "name": "clean-code-todo",
   "version": "1.0.0",
-  "description": "Учебный репозиторий для задания [«Clean Code»](https://github.com/rolling-scopes-school/tasks/blob/master/fullstack-engineering/tasks/clean-code/README.md) курса RS School Fullstack Engineering.",
+  "description": "Учебный репозиторий для задания «Clean Code» курса RS School Fullstack Engineering.",
   "main": "app.js",
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "husky"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,9 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.6.0",
     "prettier": "^3.9.10"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{html,css,json,md}": "prettier --write"
   }
 }

@@ -1,0 +1,36 @@
+{
+  "name": "clean-code-todo",
+  "version": "1.0.0",
+  "description": "Учебный репозиторий для задания «Clean Code» курса RS School Fullstack Engineering.",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gleb-Cherepnin/clean-code-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Gleb-Cherepnin/clean-code-todo/issues"
+  },
+  "homepage": "https://github.com/Gleb-Cherepnin/clean-code-todo#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.10"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.{html,css,json,md}": "prettier --check"
+  }
+}
